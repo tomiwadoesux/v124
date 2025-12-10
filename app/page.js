@@ -1,5 +1,4 @@
-import Body from "@/components/Body";
-import DitheredGradientPage from "@/components/DitherBg";
+import Body from "../components/Body";
 import Image from "next/image";
 
 export default function Home() {
