@@ -12,12 +12,12 @@
   --font-body: "Courier Prime", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #F8F8F8;
   }
-}
+} */
 
 body {
   background: var(--background);
