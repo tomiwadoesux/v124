@@ -74,7 +74,7 @@ export default function Chrome() {
                   <g id="Mask group">
                     <mask
                       id="mask0_29_923"
-                      style={{maskType: "luminance"}}
+                      style={{ maskType: "luminance" }}
                       maskUnits="userSpaceOnUse"
                       x="13"
                       y="8"
@@ -173,12 +173,18 @@ export default function Chrome() {
                 id="Dlogo"
                 onMouseEnter={handleDlogoEnter}
                 onMouseLeave={handleDlogoLeave}
+                onClick={() =>
+                  window.open(
+                    "https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd",
+                    "_blank",
+                  )
+                }
                 style={{ cursor: "pointer" }}
               >
                 <g id="Mask group_3">
                   <mask
                     id="mask1_29_923"
-                    style={{maskType: "luminance"}}
+                    style={{ maskType: "luminance" }}
                     maskUnits="userSpaceOnUse"
                     x="115"
                     y="40"
@@ -202,7 +208,7 @@ export default function Chrome() {
                           <g id="Mask group_5">
                             <mask
                               id="mask2_29_923"
-                              style={{maskType: "luminance"}}
+                              style={{ maskType: "luminance" }}
                               maskUnits="userSpaceOnUse"
                               x="115"
                               y="40"

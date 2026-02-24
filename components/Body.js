@@ -135,7 +135,7 @@ export default function Body() {
                 onMouseEnter={() => setHoveredCard(1)}
                 onMouseLeave={() => setHoveredCard(null)}
                 onClick={() =>
-                  window.open("https://v125.ayotomcs.me", "_blank")
+                  window.open("https://justclarify.ayotomcs.me", "_blank")
                 }
               >
                 <div className="col-span-4 p-4 flex flex-col justify-between w-full h-auto  rounded-[2rem] border-13  border-white">
