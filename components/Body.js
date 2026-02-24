@@ -229,7 +229,7 @@ export default function Body() {
                 className={`border-[0.9] shadow-lg border-black/10 rounded-[2rem] cursor-pointer ${getBlurClass(3)}`}
                 onMouseEnter={() => setHoveredCard(3)}
                 onMouseLeave={() => setHoveredCard(null)}
-                onClick={() => window.open("https://ayotomcs.me", "_blank")}
+                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
               >
                 <div className="col-span-4  rounded-[2rem] border-13  border-white w-full overflow-hidden">
                   <Image
@@ -247,7 +247,7 @@ export default function Body() {
                 className={`border-[0.9] shadow-lg border-black/10  self-center w-fit rounded-[2rem] cursor-pointer ${getBlurClass(4)}`}
                 onMouseEnter={() => setHoveredCard(4)}
                 onMouseLeave={() => setHoveredCard(null)}
-                onClick={() => window.open("https://ayotomcs.me", "_blank")}
+                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
               >
                 <div className="col-span-4 self-center rounded-[2rem] border-13 flex flex-row gap-2 py-1 px-3  border-white w-fit h-auto">
                   {" "}
@@ -318,7 +318,7 @@ export default function Body() {
                       <hr className="border-t border-black/20 w-full" />
                       <a
                        ref={(el) => (menuItemsRef.current[7] = el)}
-                        href="https://ayotomcs.me/"
+                        href="https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -410,7 +410,7 @@ export default function Body() {
             <div className="flex gap-3 flex-col">
               <div
                 className="border-[0.9] shadow-lg border-black/10 rounded-[1rem] cursor-pointer"
-                onClick={() => window.open("https://ayotomcs.me", "_blank")}
+                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
               >
                 <div className="col-span-4  rounded-[1rem] border-9  border-white w-full overflow-hidden">
                   <Image
@@ -425,7 +425,7 @@ export default function Body() {
               </div>
               <div
                 className="border-[0.9] shadow-lg border-black/10  self-center w-fit rounded-[1rem] cursor-pointer"
-                onClick={() => window.open("https://ayotomcs.me", "_blank")}
+                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
               >
                 <div className="col-span-4 self-center rounded-[1rem] border-9 flex flex-row gap-2 py-0 px-2  border-white w-fit h-auto">
                   {" "}
@@ -443,7 +443,7 @@ export default function Body() {
           <div className="flex pt-7 gap-4">
             <div
               className="border-[0.9] border-black/10 rounded-[2rem] shadow-lg cursor-pointer"
-              onClick={() => window.open("https://v125.ayotomcs.me", "_blank")}
+              onClick={() => window.open("https://justclarify.ayotomcs.me", "_blank")}
             >
               <div className="col-span-4 p-4 flex flex-col justify-between w-full h-auto  rounded-[2rem] border-13  border-white">
                 <div className=" self-end">
