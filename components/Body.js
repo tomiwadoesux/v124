@@ -20,13 +20,13 @@ export default function Body() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-        gsap.from(".animate-char", {
-            opacity: 0,
-            y: 10,
-            duration: 0.05,
-            stagger: 0.02,
-            ease: "power2.out",
-        });
+      gsap.from(".animate-char", {
+        opacity: 0,
+        y: 10,
+        duration: 0.05,
+        stagger: 0.02,
+        ease: "power2.out",
+      });
     }, headerRef);
     return () => ctx.revert();
   }, []);
@@ -111,17 +111,20 @@ export default function Body() {
 
   return (
     <section className="pb-8">
-      <div ref={headerRef} className="px-7 pt-12 pb-2 lg:px-11 flex flex-col gap-1">
+      <div
+        ref={headerRef}
+        className="px-7 pt-12 pb-2 lg:px-11 flex flex-col gap-1"
+      >
         <h1 className="text-4xl lg:text-6xl uppercase tracking-tighter">
-            {splitText("B00kmarked")}
+          {splitText("B00kmarked")}
         </h1>
         <div className="flex flex-col md:flex-row md:items-baseline gap-1 md:gap-3">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#4447a9]">
-                {splitText("The Chrome Extension")}
-            </span>
-            <h4 className="text-xs lg:text-sm text-black/60">
-                {splitText("That organizes browser bookmarks in a visual way")}
-            </h4>
+          <span className="text-xs font-bold tracking-widest uppercase text-[#4447a9]">
+            {splitText("The Chrome Extension")}
+          </span>
+          <h4 className="text-xs lg:text-sm text-black/60">
+            {splitText("That organizes browser bookmarks in a visual way")}
+          </h4>
         </div>
       </div>
 
@@ -129,7 +132,7 @@ export default function Body() {
         <div className="  px-11 pt-16 grid grid-cols-14 gap-3 ">
           <div className="col-span-3 ">
             <div className="flex gap-5 flex-col">
-              {/* Card 1: Recently Worked On */}
+              {/* Card 1:Currently Working On */}
               <div
                 className={`border-[0.9] border-black/10 rounded-[2rem] shadow-lg cursor-pointer ${getBlurClass(1)}`}
                 onMouseEnter={() => setHoveredCard(1)}
@@ -147,7 +150,7 @@ export default function Body() {
                   </div>
 
                   <h4 className="text-sm font-bold tracking-wider text-center">
-                    Recently Worked On
+                    Currently Working On
                   </h4>
                   <div className="pt-1 px-6">
                     <svg
@@ -166,10 +169,18 @@ export default function Body() {
                       />
                     </svg>
                   </div>
-                  <h4 className="text-sm pt-3 tracking-wider text-center break-all">
-                    A WebGl engine that forces gradients through dither
-                    matrices. it maps luminance to procedural color, also
-                    turning static images into living data visualizations.
+                  <h4
+                    className="text-sm pt-3 tracking-wider text-center"
+                    style={{
+                      hyphens: "auto",
+                      WebkitHyphens: "auto",
+                      wordBreak: "break-word",
+                    }}
+                    lang="en"
+                  >
+                    An ambient In Browser Explatation tool that explains
+                    highlighted text to stop switching tabs to search for
+                    context and focus on the content.
                   </h4>
                 </div>
               </div>
@@ -229,7 +240,12 @@ export default function Body() {
                 className={`border-[0.9] shadow-lg border-black/10 rounded-[2rem] cursor-pointer ${getBlurClass(3)}`}
                 onMouseEnter={() => setHoveredCard(3)}
                 onMouseLeave={() => setHoveredCard(null)}
-                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd",
+                    "_blank",
+                  )
+                }
               >
                 <div className="col-span-4  rounded-[2rem] border-13  border-white w-full overflow-hidden">
                   <Image
@@ -247,7 +263,12 @@ export default function Body() {
                 className={`border-[0.9] shadow-lg border-black/10  self-center w-fit rounded-[2rem] cursor-pointer ${getBlurClass(4)}`}
                 onMouseEnter={() => setHoveredCard(4)}
                 onMouseLeave={() => setHoveredCard(null)}
-                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd",
+                    "_blank",
+                  )
+                }
               >
                 <div className="col-span-4 self-center rounded-[2rem] border-13 flex flex-row gap-2 py-1 px-3  border-white w-fit h-auto">
                   {" "}
@@ -317,15 +338,12 @@ export default function Body() {
                       </h4>
                       <hr className="border-t border-black/20 w-full" />
                       <a
-                       ref={(el) => (menuItemsRef.current[7] = el)}
+                        ref={(el) => (menuItemsRef.current[7] = el)}
                         href="https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <h4
-                         
-                          className="flex flex-row gap-2 px-2 text-nowrap py-1 rounded cursor-pointer"
-                        >
+                        <h4 className="flex flex-row gap-2 px-2 text-nowrap py-1 rounded cursor-pointer">
                           <span>
                             <Addto />
                           </span>{" "}
@@ -410,7 +428,12 @@ export default function Body() {
             <div className="flex gap-3 flex-col">
               <div
                 className="border-[0.9] shadow-lg border-black/10 rounded-[1rem] cursor-pointer"
-                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd",
+                    "_blank",
+                  )
+                }
               >
                 <div className="col-span-4  rounded-[1rem] border-9  border-white w-full overflow-hidden">
                   <Image
@@ -425,7 +448,12 @@ export default function Body() {
               </div>
               <div
                 className="border-[0.9] shadow-lg border-black/10  self-center w-fit rounded-[1rem] cursor-pointer"
-                onClick={() => window.open("https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://chromewebstore.google.com/detail/b00kmarked/dnmjgkiniamlgbacpajcgpmfehndkimd",
+                    "_blank",
+                  )
+                }
               >
                 <div className="col-span-4 self-center rounded-[1rem] border-9 flex flex-row gap-2 py-0 px-2  border-white w-fit h-auto">
                   {" "}
@@ -443,7 +471,9 @@ export default function Body() {
           <div className="flex pt-7 gap-4">
             <div
               className="border-[0.9] border-black/10 rounded-[2rem] shadow-lg cursor-pointer"
-              onClick={() => window.open("https://justclarify.ayotomcs.me", "_blank")}
+              onClick={() =>
+                window.open("https://justclarify.ayotomcs.me", "_blank")
+              }
             >
               <div className="col-span-4 p-4 flex flex-col justify-between w-full h-auto  rounded-[2rem] border-13  border-white">
                 <div className=" self-end">
@@ -454,7 +484,7 @@ export default function Body() {
                 </div>
 
                 <h4 className="text-base font-bold tracking-wider text-center">
-                  Recently Worked On
+                  Currently Working On
                 </h4>
                 <div className="pt-1 px-6">
                   <svg
@@ -473,10 +503,18 @@ export default function Body() {
                     />
                   </svg>
                 </div>
-                <h4 className="text-sm pt-3 tracking-wider text-center break-all">
-                  A WebGl engine that forces gradients through dither matrices.
-                  it maps luminance to procedural color, also turning static
-                  images into living data visualizations.
+                <h4
+                  className="text-sm pt-3 tracking-wider text-center"
+                  style={{
+                    hyphens: "auto",
+                    WebkitHyphens: "auto",
+                    wordBreak: "break-word",
+                  }}
+                  lang="en"
+                >
+                  An ambient In Browser Explatation tool that explains
+                  highlighted text to stop switching tabs to search for context
+                  and focus on the content.
                 </h4>
               </div>
             </div>
